@@ -52,3 +52,8 @@ product.restock(quantity);}}} // Increase stock
 const inventory = new Inventory(); // New inventory 
 inventory.addProduct(prod1); // Add product 
 inventory.listProducts(); // Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 5" 
+
+// Task 4: Implementing Order Management //
+inventory.placeOrder(601, prod1, 2); // Place order
+inventory.listOrders(); // Expected output: "Order ID: 601, Product: Laptop, Quantity: 2, Total Price: $2400"
+console.log(prod1.getDetails()); //Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 3"
