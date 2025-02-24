@@ -57,3 +57,7 @@ inventory.listProducts(); // Expected output: "Product: Laptop, ID: 101, Price: 
 inventory.placeOrder(601, prod1, 2); // Place order
 inventory.listOrders(); // Expected output: "Order ID: 601, Product: Laptop, Quantity: 2, Total Price: $2400"
 console.log(prod1.getDetails()); //Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 3"
+
+// Task 5: Implementing Product Restocking //
+inventory.restockProduct(101, 5); // Restock product
+console.log(prod1.getDetails()); // Expected output: "Product: Laptop, ID: 101, Price: $1200, Stock: 8"
